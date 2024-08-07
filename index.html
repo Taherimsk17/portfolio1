@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taherim Sheikh - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <img src="profile-image.jpg" alt="Taherim Sheikh" class="profile-img">
+                <h1>Taherim Sheikh</h1>
+                <p>Aspiring Data Analyst | AI and Data Science Enthusiast</p>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#passion">Passion</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#charts">Charts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! My name is Taherim Sheikh, a 3rd-year student at Anjuman College of Engineering and Technology, majoring in Artificial Intelligence and Data Science. With a strong passion for data analysis, I have developed essential skills through academic coursework and hands-on internships.</p>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skill-set">
+                <div class="skill">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill">
+                    <h3>VB.Net by Microsoft</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section id="internships" class="section">
+            <h2>Internships</h2>
+            <ul class="internships-list">
+                <li><strong>GREENTECH</strong> - Contributed to various projects, gaining hands-on experience in [briefly describe responsibilities].</li>
+                <li><strong>NASSTECHNOLOGY</strong> - Worked on [briefly describe responsibilities], enhancing my skills in [mention any specific skills].</li>
+            </ul>
+        </section>
+        
+        <section id="passion" class="section">
+            <h2>Passion</h2>
+            <p>My ultimate goal is to become a data analyst. I am eager to leverage data to uncover insights and assist organizations in making informed, data-driven decisions.</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <img src="project-image.jpg" alt="Project Screenshot" class="project-image">
+            <p>Description of the project goes here. Explain what the project is about, your role, and any technologies used.</p>
+        </section>
+        
+        <section id="charts" class="section">
+            <h2>Charts</h2>
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taherim Sheikh. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/taherimsheikh_05" target="_blank" class="social-link">
+                <img src="instagram-icon.png" alt="Instagram">
+                <span>@taherimsheikh_05</span>
+            </a>
+        </div>
+    </footer>
+    <script>
+        // JavaScript to create chart
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar', // or 'line', 'pie', etc.
+            data: {
+                labels: ['Java', 'Python', 'VB.Net'], // X-axis labels
+                datasets: [{
+                    label: 'Skill Proficiency',
+                    data: [70, 85, 60], // Skill levels or other data
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
